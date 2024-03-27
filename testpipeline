@@ -1,8 +1,10 @@
 pipeline {
-    agent {label='window'}
+    
     
     stages {
+   
         stage('Example Stage') {
+ agent { label= 'window' }
             steps {
                 echo 'Hello, world!'
             }
